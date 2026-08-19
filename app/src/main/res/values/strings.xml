@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">抢券精灵</string>
+    <string name="accessibility_desc">用于在特定时间自动点击屏幕指定位置，以抢购限时优惠券。本服务仅在悬浮窗设定时间后模拟一次点击，不会收集任何数据。</string>
+
+    <!-- 主界面 -->
+    <string name="hint_overlay_perm">1. 悬浮窗权限：用于在其他 App 上方显示控制面板</string>
+    <string name="hint_a11y">2. 无障碍服务：用于精确在指定坐标模拟点击（无需 root）</string>
+    <string name="btn_grant_overlay">授予悬浮窗权限</string>
+    <string name="btn_open_a11y">开启无障碍服务</string>
+    <string name="btn_huawei">华为/鸿蒙 适配设置</string>
+    <string name="btn_start_float">启动悬浮窗</string>
+    <string name="dialog_huawei_title">华为 / 鸿蒙 设备必看</string>
+    <string name="dialog_huawei_msg">为保证到点能正常点击，请在本机「设置」中为本应用开启：\n\n1. 应用管理 → 抢券精灵 → 权限 → 悬浮窗：允许\n2. 应用管理 → 抢券精灵 → 自启动 / 关联启动 / 后台运行：允许\n3. 电池优化 → 抢券精灵：设为“不允许”（已尝试自动申请）\n4. 无障碍 → 抢券精灵：开启并保持\n\n若系统为 HarmonyOS NEXT（纯鸿蒙），则无法安装 Android APK，需鸿蒙原生版本。</string>
+    <string name="status_ready">两项权限已就绪，可以启动悬浮窗</string>
+    <string name="status_not_ready">请先完成上方两项权限设置</string>
+
+    <!-- 悬浮窗 -->
+    <string name="label_x">X 坐标（像素）</string>
+    <string name="label_y">Y 坐标（像素）</string>
+    <string name="label_date">日期 yyyy-MM-dd</string>
+    <string name="label_time">时间 HH:mm:ss</string>
+    <string name="label_ms">毫秒 000-999</string>
+    <string name="label_repeat">重复次数（1=单次）</string>
+    <string name="btn_pick">选坐标</string>
+    <string name="btn_test">测试点击</string>
+    <string name="btn_start">开始</string>
+    <string name="btn_stop">停止</string>
+    <string name="countdown_idle">未开始</string>
+    <string name="toast_input_invalid">请填写完整且合法的时间与坐标</string>
+    <string name="toast_time_past">目标时间已过，请设置未来时间</string>
+    <string name="toast_no_a11y_root">无障碍未开启且未 root，无法点击</string>
+    <string name="toast_pick_hint">点击屏幕任意位置以选取坐标</string>
+    <string name="toast_fired">已触发点击</string>
+    <string name="pick_done">已选取坐标 (%1$d, %2$d)</string>
+</resources>
