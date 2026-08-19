@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- 拖动条 -->
+        <LinearLayout
+            android:id="@+id/dragHandle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_handle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/countdown_idle"
+            android:textColor="@color/overlay_accent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etX"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="4dp"
+                android:inputType="number"
+                android:hint="@string/label_x"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etY"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="4dp"
+                android:inputType="number"
+                android:hint="@string/label_y"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="4dp"
+                android:inputType="date"
+                android:hint="@string/label_date"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="4dp"
+                android:inputType="time"
+                android:hint="@string/label_time"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etMs"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="4dp"
+                android:inputType="number"
+                android:hint="@string/label_ms"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etRepeat"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="4dp"
+                android:inputType="number"
+                android:hint="@string/label_repeat"
+                android:text="1"
+                android:textSize="12sp" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnPick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_pick"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="@string/btn_start"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:enabled="false"
+                android:text="@string/btn_stop"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/btn_test"
+            android:textSize="13sp" />
+    </LinearLayout>
+</FrameLayout>
